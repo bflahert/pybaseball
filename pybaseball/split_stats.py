@@ -52,7 +52,7 @@ def get_player_info(playerid: str, soup: bs.BeautifulSoup = None) -> Dict:
         'Throws': fv[5],
         # 'Height': int(fv[6].split(' ')[0])*12+int(fv[6].split(' ')[1]), # Commented out because I determined that Pablo Sandoval has some weird formatting that ruins this. Uncomment for ht, wt of most players. 
         # 'Weight': int(fv[7][0:3]),
-        # 'Team': fv[10]
+        'Team': fv[10]
     }
     return player_info_data
 
